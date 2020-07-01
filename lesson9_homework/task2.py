@@ -58,7 +58,7 @@ def encode(s: str, encodings: dict()) -> str:
         res.append(encodings[char])
     return ''.join(res)
 
-def decode(e_s: str, encodings: dict()):
+def decode(e_s: str, encodings: dict()) -> str:
     encodings = {value: key for key, value in encodings.items()}
     res = []
 
